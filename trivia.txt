@@ -1,0 +1,28 @@
+Question 1
+What is the capital of France?
+
+Paris
+London
+Berlin
+Madrid
+1
+Paris is the capital of France.
+
+Question 2
+What is the largest planet in our solar system?
+Earth
+Venus
+Jupiter
+Mars
+3
+Jupiter is the largest planet in our solar system.
+
+Question 3
+What is 2 + 2
+1
+2
+3
+4
+4
+2 + 2 = 4
+
