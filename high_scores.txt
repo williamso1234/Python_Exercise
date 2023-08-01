@@ -1,0 +1,3 @@
+Name: dude, Score: 3010
+Name: will, Score: 3000
+Name: mouse, Score: 1000
