@@ -13,12 +13,11 @@ class Critter(object):
     def mood(self):
         unhappiness = self.hunger + self.boredom
         if unhappiness < 5:
-            m = 'happy'
+            return 'happy'
         elif 11 <= unhappiness <= 15:
-            m = 'frustrated'
+            return 'frustrated'
         else:
-            m = 'mad'
-        return m
+            return 'mad'
 
     def talk(self):
         print('I\'m', self.name, 'and I feel', self.mood, 'now.\n')
