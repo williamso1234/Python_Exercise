@@ -71,18 +71,27 @@ def main():
             crit.talk()
             print(crit)
         elif choice == '2':
-            food = int(input('How many pounds of food would you like to feed your critter> :'))
-            while not (6 > food > 0):
-                print('Error... Try Again')
-                food = int(input('How many pounds of food would you like to feed your critter (1, 5)> :'))
+            while True:
+                try:
+                    pounds_of_food = int(input('How many pounds of food would you like to feed your critter (1-5)> '))
+                    if pounds_of_food in [1, 2, 3, 4, 5]:
+                        break
+                    else:
+                        print('Error... Try Again')
+                except ValueError:
+                    print('Error... Try Again')
             crit.eat()
             print(crit)
         elif choice == '3':
-            play = int(input('How many minutes would you like to play with your critter> :'))
-            while not (6 > play > 0):
-                print('Error... Try Again')
-                play = int(input('How many minutes would you like to play with your critter (1, 5)> :'))
-
+            while True:
+                try:
+                    play_time = int(input('How many minutes would you like to play with your critter (1-5)> :'))
+                    if play_time in [1, 2, 3, 4, 5]:
+                        break
+                    else:
+                        print('Error... Try Again')
+                except ValueError:
+                    print('Error... Try Again')
             crit.play()
             print(crit)
         else:
@@ -90,3 +99,4 @@ def main():
 
 
 main()
+
